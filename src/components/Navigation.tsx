@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Book, Calendar, User, Star } from 'lucide-react';
+import { Home, Book, Calendar, User, Star, Sparkles } from 'lucide-react';
 
 export default function Navigation() {
   const location = useLocation();
@@ -14,6 +14,7 @@ export default function Navigation() {
     { path: '/study', icon: Book, label: 'Учебник', id: 'study' },
     { path: '/daily', icon: Calendar, label: 'Послание дня', id: 'daily' },
     { path: '/birthday', icon: User, label: 'По дате', id: 'birthday' },
+    { path: '/name', icon: Sparkles, label: 'По имени', id: 'name' },
     { path: '/favorites', icon: Star, label: 'Избранное', id: 'favorites' },
   ];
 

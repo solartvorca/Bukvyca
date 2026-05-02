@@ -5,11 +5,12 @@ import HomeScreen from './screens/HomeScreen';
 import StudyScreen from './screens/StudyScreen';
 import DailyScreen from './screens/DailyScreen';
 import BirthdayScreen from './screens/BirthdayScreen';
+import NameScreen from './screens/NameScreen';
 import FavoritesScreen from './screens/FavoritesScreen';
 
 function App() {
   return (
-    <Router basename={import.meta.env.PROD ? '/bookvisa' : ''}>
+    <Router basename="">
       <div className="min-h-screen bg-gradient-to-b from-bukvitsa-black via-bukvitsa-dark-blue to-bukvitsa-black text-white">
         <Navigation />
         <main className="pb-24 pt-16">
@@ -18,6 +19,7 @@ function App() {
             <Route path="/study" element={<StudyScreen />} />
             <Route path="/daily" element={<DailyScreen />} />
             <Route path="/birthday" element={<BirthdayScreen />} />
+            <Route path="/name" element={<NameScreen />} />
             <Route path="/favorites" element={<FavoritesScreen />} />
           </Routes>
         </main>
